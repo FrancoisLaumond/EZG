@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teammates - EZG RESEAU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>EZG</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="index.html#about" class="nav-link">À Propos</a>
+                <a href="teammates.html" class="nav-link active">Teammates</a>
+                <a href="index.html#equipes" class="nav-link">Équipes</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="teammates-header">
+        <div class="container">
+            <h1>NOS TEAMMATES</h1>
+            <p>Découvrez les statistiques de nos joueurs d'élite</p>
+        </div>
+    </section>
+
+    <!-- Game Filter -->
+    <section class="game-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-game="all">Tous</button>
+                <button class="filter-btn" data-game="valorant">Valorant</button>
+                <button class="filter-btn" data-game="lol">League of Legends</button>
+                <button class="filter-btn" data-game="cs2">CS2</button>
+                <button class="filter-btn" data-game="rl">Rocket League</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Animation -->
+    <div class="loading-container" id="loading">
+        <div class="loading-spinner"></div>
+        <p>Chargement des statistiques...</p>
+    </div>
+
+    <!-- Players Grid -->
+    <section class="teammates-grid">
+        <div class="container">
+            <div class="players-container" id="playersContainer">
+                <!-- Les joueurs seront injectés ici par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Modal -->
+    <div class="modal" id="playerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <img id="modalAvatar" src="" alt="Avatar">
+                <div class="modal-info">
+                    <h2 id="modalName"></h2>
+                    <p id="modalTag"></p>
+                    <p id="modalGame"></p>
+                </div>
+            </div>
+            <div class="modal-stats" id="modalStats">
+                <!-- Stats détaillées seront injectées ici -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>EZG RÉSEAU</h3>
+                    <p>Gaming Community</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Accueil</a>
+                        <a href="index.html#about">À Propos</a>
+                        <a href="teammates.html">Teammates</a>
+                        <a href="index.html#equipes">Équipes</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Communauté</h4>
+                        <a href="#">Discord</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Twitch</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EZG Réseau. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialiser la page teammates
+        document.addEventListener('DOMContentLoaded', function() {
+            loadTeammates();
+            setupFilters();
+            setupModal();
+        });
+    </script>
+</body>
+</html>
