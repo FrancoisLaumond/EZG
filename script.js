@@ -1,55 +1,9 @@
-// Configuration des joueurs prédéfinis avec leurs IDs Riot
+// Configuration des joueurs League of Legends prédéfinis avec leurs IDs Riot
 const PREDEFINED_PLAYERS = [
     {
         id: 'player1',
-        name: 'ShadowStrike',
-        tag: '#EZG001',
-        riotId: 'ShadowStrike#1337',
-        game: 'valorant',
-        avatar: '🔥',
-        rank: 'Immortal 3',
-        stats: {
-            kd: '1.85',
-            winrate: '68%',
-            acs: '267',
-            headshot: '24%'
-        },
-        detailedStats: {
-            'Parties jouées': '1,247',
-            'Victoires': '847',
-            'Défaites': '400',
-            'Temps de jeu': '342h',
-            'Agent principal': 'Jett',
-            'Meilleur score': '40/12/8'
-        }
-    },
-    {
-        id: 'player2', 
-        name: 'ThunderBolt',
-        tag: '#EZG002',
-        riotId: 'ThunderBolt#7890',
-        game: 'valorant',
-        avatar: '⚡',
-        rank: 'Radiant',
-        stats: {
-            kd: '2.12',
-            winrate: '74%',
-            acs: '289',
-            headshot: '28%'
-        },
-        detailedStats: {
-            'Parties jouées': '892',
-            'Victoires': '660',
-            'Défaites': '232',
-            'Temps de jeu': '267h',
-            'Agent principal': 'Reyna',
-            'Meilleur score': '43/8/12'
-        }
-    },
-    {
-        id: 'player3',
         name: 'IceBreaker',
-        tag: '#EZG003',
+        tag: '#EZG001',
         riotId: 'IceBreaker#4567',
         game: 'lol',
         avatar: '❄️',
@@ -70,9 +24,9 @@ const PREDEFINED_PLAYERS = [
         }
     },
     {
-        id: 'player4',
+        id: 'player2',
         name: 'Phoenix',
-        tag: '#EZG004',
+        tag: '#EZG002',
         riotId: 'Phoenix#1234',
         game: 'lol',
         avatar: '🔥',
@@ -93,120 +47,59 @@ const PREDEFINED_PLAYERS = [
         }
     },
     {
-        id: 'player5',
-        name: 'VoidWalker',
-        tag: '#EZG005',
-        riotId: 'VoidWalker#9999',
-        game: 'cs2',
-        avatar: '💀',
-        rank: 'Global Elite',
+        id: 'player3',
+        name: 'ShadowMage',
+        tag: '#EZG003',
+        riotId: 'ShadowMage#7890',
+        game: 'lol',
+        avatar: '🌙',
+        rank: 'Master',
         stats: {
-            kd: '1.94',
-            winrate: '72%',
-            adr: '89.2',
-            rating: '1.43'
+            kda: '2.8',
+            winrate: '64%',
+            lp: '289',
+            cspm: '7.9'
         },
         detailedStats: {
-            'Parties jouées': '1,124',
-            'Victoires': '809',
-            'Défaites': '315',
-            'Temps de jeu': '478h',
-            'Arme favorite': 'AK-47',
-            'Headshot %': '31%'
+            'Parties jouées': '398',
+            'Victoires': '255',
+            'Défaites': '143',
+            'Champion principal': 'Syndra',
+            'KDA moyen': '9.1/5.2/11.8',
+            'Or par minute': '398'
         }
     },
     {
-        id: 'player6',
-        name: 'CyberNinja',
-        tag: '#EZG006',
-        riotId: 'CyberNinja#0001',
-        game: 'cs2',
-        avatar: '🥷',
-        rank: 'Supreme Master',
+        id: 'player4',
+        name: 'DragonSlayer',
+        tag: '#EZG004',
+        riotId: 'DragonSlayer#1337',
+        game: 'lol',
+        avatar: '🐉',
+        rank: 'Diamond I',
         stats: {
-            kd: '1.67',
-            winrate: '65%',
-            adr: '78.4',
-            rating: '1.28'
-        },
-        detailedStats: {
-            'Parties jouées': '876',
-            'Victoires': '569',
-            'Défaites': '307',
-            'Temps de jeu': '342h',
-            'Arme favorite': 'M4A4',
-            'Headshot %': '28%'
-        }
-    },
-    {
-        id: 'player7',
-        name: 'RocketMaster',
-        tag: '#EZG007',
-        riotId: 'RocketMaster#5555',
-        game: 'rl',
-        avatar: '🚀',
-        rank: 'Grand Champion III',
-        stats: {
-            mmr: '1834',
+            kda: '2.5',
             winrate: '58%',
-            goals: '2.1',
-            saves: '1.8'
+            lp: '1891',
+            cspm: '8.1'
         },
         detailedStats: {
-            'Parties jouées': '2,341',
-            'Victoires': '1,358',
-            'Défaites': '983',
-            'Temps de jeu': '567h',
-            'Buts marqués': '4,916',
-            'Arrêts': '4,213'
-        }
-    },
-    {
-        id: 'player8',
-        name: 'AerialAce',
-        tag: '#EZG008',
-        riotId: 'AerialAce#7777',
-        game: 'rl',
-        avatar: '✈️',
-        rank: 'Champion I',
-        stats: {
-            mmr: '1245',
-            winrate: '62%',
-            goals: '1.9',
-            saves: '2.2'
-        },
-        detailedStats: {
-            'Parties jouées': '1,876',
-            'Victoires': '1,163',
-            'Défaites': '713',
-            'Temps de jeu': '423h',
-            'Buts marqués': '3,563',
-            'Arrêts': '4,127'
+            'Parties jouées': '612',
+            'Victoires': '355',
+            'Défaites': '257',
+            'Champion principal': 'Graves',
+            'KDA moyen': '7.3/4.8/9.6',
+            'Or par minute': '412'
         }
     }
 ];
 
-// Configuration des jeux
+// Configuration du jeu
 const GAME_CONFIG = {
-    valorant: {
-        name: 'Valorant',
-        color: '#ff4655',
-        statLabels: { kd: 'K/D', winrate: 'Winrate', acs: 'ACS', headshot: 'HS%' }
-    },
     lol: {
         name: 'League of Legends',
         color: '#0596aa',
         statLabels: { kda: 'KDA', winrate: 'Winrate', lp: 'LP', cspm: 'CS/min' }
-    },
-    cs2: {
-        name: 'Counter-Strike 2',
-        color: '#f59e0b',
-        statLabels: { kd: 'K/D', winrate: 'Winrate', adr: 'ADR', rating: 'Rating' }
-    },
-    rl: {
-        name: 'Rocket League',
-        color: '#005cb8',
-        statLabels: { mmr: 'MMR', winrate: 'Winrate', goals: 'Goals/G', saves: 'Saves/G' }
     }
 };
 
@@ -342,35 +235,17 @@ function renderPlayers(players) {
     initScrollAnimations();
 }
 
-// Configuration des filtres
+// Configuration des filtres (désactivé car un seul jeu)
 function setupFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Supprimer la classe active de tous les boutons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Ajouter la classe active au bouton cliqué
-            this.classList.add('active');
-            
-            currentFilter = this.getAttribute('data-game');
-            filterPlayers();
-        });
-    });
+    // Plus de filtres nécessaires car nous n'avons que League of Legends
+    return;
 }
 
-// Filtrage des joueurs
+// Filtrage des joueurs (désactivé car un seul jeu)
 function filterPlayers() {
+    // Plus de filtrage nécessaire car nous n'avons que League of Legends
     if (!playersLoaded) return;
-
-    let filteredPlayers = PREDEFINED_PLAYERS;
-    
-    if (currentFilter !== 'all') {
-        filteredPlayers = PREDEFINED_PLAYERS.filter(player => player.game === currentFilter);
-    }
-
-    renderPlayers(filteredPlayers);
+    renderPlayers(PREDEFINED_PLAYERS);
 }
 
 // Configuration de la modale
